@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<action name="Login" class="com.action.GoLogin">
+			<result name="input">/Login.jsp</result>
+			<result name="success">/Index.jsp</result>
+		</action>
+		<action name="Quit" class="com.action.Quit">
+			<result name="success">/Login.jsp</result>
+		</action>
+		<action name="PasswordUpdateSave" class="com.action.PasswordUpdateSave">
+			<result name="input">/PasswordUpdate.jsp</result>
+		</action>
+		<action name="BookManager" class="com.action.BookManager">
+			<result name="success">/BookManager.jsp</result>
+		</action>
+		<action name="BookAddSave" class="com.action.BookAddSave">
+		</action>
+		<action name="BookUpdate" class="com.action.BookUpdate">
+			<result name="success">/BookUpdate.jsp</result>
+		</action>
+		<action name="BookUpdateSave" class="com.action.BookUpdateSave">
+		</action>
+		<action name="BookDel" class="com.action.BookDel">
+		</action>
+		<action name="StudentManager" class="com.action.StudentManager">
+			<result name="success">/StudentManager.jsp</result>
+		</action>
+		<action name="StudentAddSave" class="com.action.StudentAddSave">
+			<result name="success">/StudentManager.jsp</result>
+		</action>
+		<action name="StudentDel" class="com.action.StudentDel">
+		</action>
+		<action name="BorrowManager" class="com.action.BorrowManager">
+			<result name="success">/BorrowManager.jsp</result>
+		</action>
+		<action name="ReturnManager" class="com.action.ReturnManager">
+			<result name="success">/ReturnManager.jsp</result>
+		</action>
+		<action name="Borrow" class="com.action.Borrow">
+		</action>
+		<action name="Return" class="com.action.Return">
+		</action>
+	</package>
+</struts>    
